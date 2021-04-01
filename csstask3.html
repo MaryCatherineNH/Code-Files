@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 3 Flexbox</title>
+    <style>
+        .flexbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flexbox-item-1{
+            flex: 1;
+            background-color: orchid;
+        }
+        .flexbox-item-2{
+            flex: 2;
+            background-color: red;
+        }
+        .flexbox-item-3{
+            flex: 1;
+            background-color: springgreen;
+
+        }
+        .flexbox div{
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        
+        }
+        img{
+            width: 75%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">             <!--Section 1-->
+        <div class="flexbox-item-1">  <!--S1 Left-->
+            Element 1
+        </div>
+        <div class="flexbox-item-2"> <!--S1 Middle-->
+            Element 2
+        </div>
+        <div class="flexbox-item-1">  <!--S1 Right-->
+            Element 3
+        </div>
+    </div>
+    <div class="flexbox">             <!--Section 2-->
+        <div class="flexbox-item-1">  <!--S2 Left-->
+             Element 1  
+        </div>
+        <div class="flexbox-item-1">  <!--S2 Right-->
+              Element 2
+        </div>
+    </div>
+    <div class="flexbox">                                      <!--Section 3-->
+        <div class="flexbox-item-1">                           <!--S3 Left-->
+            <div class="flexbox">                              <!--S3 sub Left -->  
+                <div class="flexbox-item-3">                   <!--S3 sub Leftbox-->
+                    <img src="chocolate.jpg" alt="">
+                </div>
+                <div class="flexbox-item-3"><p>Information</p> <!--S3 sub Rightbox-->
+                </div>
+            </div>
+        </div>
+        <div class="flexbox-item-1">
+              Element 2
+        </div>
+    </div>
+  
+</body>
+</html>
